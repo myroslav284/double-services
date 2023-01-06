@@ -1,0 +1,166 @@
+@use './modules/mixins' as m;
+@use './modules/variables' as v;
+
+.services {
+    background-image: url(../img/lines.svg);
+    background-repeat: no-repeat;
+
+    &-title {
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 64px;
+    color: v.$title-color;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 721px;
+
+    &-container {
+        display: flex;
+        gap: 20px;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        left: 0px;
+    }
+
+    &-item {
+        height: 721px;
+        min-width: 445px;
+        background-color: #fff;
+        text-align: start;
+    }
+
+    &-img {
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        font-weight: 700;
+        font-size: 30px;
+        color: v.$title-color;
+        margin-bottom: 20px;
+    }
+
+    &-desc {
+        color: v.$text-color;
+        font-size: 18px;
+        margin-bottom: 30px;
+        height: 324px;
+
+        & ul li {
+            list-style: inside;
+        }
+
+
+
+
+
+    }
+
+
+    &-link {
+        // margin-bottom: -40px;
+
+        & a {
+            color: v.$title-color;
+            font-weight: 700;
+
+        }
+
+        & a::after {
+            content: url('../img/arrow.png');
+            color: v.$mainColor;
+        }
+
+        & a:hover {
+            color: v.$mainColor;
+
+            &::after {
+                content: url('../img/arrow-2.png');
+            }
+        }
+
+    }
+
+
+    &-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding-bottom: 100px;
+    }
+
+
+
+}
+
+.item-container {
+    padding: 40px;
+    height: 100%;
+
+}
+
+.square-btns {
+    display: flex;
+    gap: 30px;
+}
+.square-btn {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    font-size: 40px;
+    color: v.$mainColor;
+    border: none;
+    cursor: pointer;
+
+    &.active {
+        color: #fff;
+        background: v.$mainColor;
+    }
+}
+
+.next::before {
+    content: '>';
+}
+
+.pre::before {
+    content: '<';
+}
+
+
+
+.circle-btn {
+    width: 15px;
+    height: 15px;
+
+    background: #C4C4C4;
+    border-radius: 19px;
+    border: none;
+    cursor: pointer;
+
+    &.active {
+        width: 50px;
+
+        background: #524EB7;
+        border-radius: 19px;
+    }
+}
+
+.circle-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hidden-circle {
+    display: none;
+}

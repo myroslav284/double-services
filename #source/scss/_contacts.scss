@@ -1,0 +1,32 @@
+.contacts {
+    background-image: url(../img/contacts-lines.svg);
+    height: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__breadcrumbs{
+        padding-top: 76px;
+    }
+    &__breadcrumbs a, &__breadcrumbs a::after {
+        color: #000;
+
+    }
+}
+
+.contacts__breadcrumbs a.breadcrumbs-link:nth-child(1):after {
+    content: url('../img/contacts-line.svg');
+
+}
+
+.feedback__text {
+    color: #fff;
+}
+
+.feedback-form.contacts-form {
+    top: -463px;
+}
+
+.feedback__email, .feedback__phone {
+    display: none;
+}
