@@ -1,0 +1,23 @@
+@use './modules/variables' as v;
+
+.aboutus {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding:   100px 195px 100px 42px;
+    gap: 80px;
+
+
+    &__title, &__desc {
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        font-size: 18px;
+    }
+    &__under {
+        color: v.$title-color;
+        font-weight: 700;
+        font-size: 24px;
+    }
+}

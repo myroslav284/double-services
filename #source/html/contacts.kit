@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- @include './header.html' -->
+    <section class="contacts">
+        <div class="contacts__container container">
+            <div class="contacts__breadcrumbs">
+                <a href="./index.html" class="breadcrumbs-link">
+                    Главная
+                </a>
+                <a href="./seo.html" class="breadcrumbs-link">
+                    Контакты
+                </a>
+            </div>
+            <div class="contacts__title title">
+                Контакты
+            </div>
+            <div class="feedback__email">
+                <a class="email" href="#">mail@2servisa.ru</a>
+            </div>
+            <div class="feedback__phone">
+                <a class="phone" href="#">+7 (909) 858-15-62</a>
+            </div>
+        </div>
+        <div class="feedback__container">
+
+            <div class="feedback__text container">
+                <div class="feedback__title">
+                    Обратная связь
+                </div>
+        
+                <div class="feedback__desc">
+                    Хотите заказать наши услуги или же у вас остались вопросы? Напишите нам и мы обязательно вам ответим!
+                </div>
+
+
+            </div>
+    
+            <form action="" class="feedback-form contacts-form container">
+    
+                <div class="form__container">
+    
+                    <input type="text" required placeholder="ФИО">
+                    <input type="email" placeholder="Адрес эл.почты" required>
+                    <input type="phone" placeholder="Номер телефона" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                    <button type="submit" class="form-btn">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- @include './footer.html' -->
+
+    <script type="module" src="./js/seo.js"></script>
+</body>
+
+</html>

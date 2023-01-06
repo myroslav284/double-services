@@ -1,0 +1,74 @@
+@use './modules/variables' as v;
+
+.feedback {
+
+    padding-top: 100px;
+    // padding-bottom: 120px;
+    color: #fff;
+    background-image: url(../img/feedback-lines.svg);
+    height: 960px;
+
+    &__container {
+        display: flex;
+        position: relative;
+        height: 428px;
+        background: v.$mainColor;
+    }
+
+    &__title {
+        margin-top: 100px;
+        font-weight: 700;
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        font-weight: 500;
+        font-size: 24px;
+        width: 755px;
+    }
+
+    &-form {
+        background-color: #fff;
+        width: 601px;
+        height: 760px;
+        position: absolute;
+        right: -100px;
+        top: 100px;
+    }
+}
+
+.form__container {
+    padding: 60px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 481px;
+    height: 79px;
+}
+
+input {
+    height: 79px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    margin-bottom: 60px;
+    height: 153px;
+}
+
+.form-btn {
+    width: 481px;
+    height: 80px;
+    background: v.$mainColor;
+    color: #fff;
+    border: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding-left: 30px;
+    padding-top: 26px;
+}

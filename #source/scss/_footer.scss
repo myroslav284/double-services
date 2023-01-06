@@ -1,0 +1,38 @@
+@use './modules/variables' as v;
+
+.footer {
+    background-color: v.$title-color;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        flex-wrap: wrap;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        opacity: 0.6;
+    }
+
+    &__text-1 {
+        margin-right: 40px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+
+    }
+
+    &__bottom {
+        color: #fff;
+    }
+}
+
